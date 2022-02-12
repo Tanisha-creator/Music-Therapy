@@ -1,0 +1,302 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@699;700&display=swap");
+:root {
+  --lower: 100;
+  --upper: 700;
+}
+
+.mood_head {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 3rem;
+  text-align: center;
+  white-space: nowrap;
+  font-variation-settings: 'wght' var(--lower);
+  margin-top: -60px;
+  letter-spacing: 1px;
+}
+h1 span {
+  color: hsla(180, 100%, 90%, var(--alpha-0));
+  animation: rise 2.25s infinite ease-in-out;
+  animation-delay: calc((var(--index) - 6) * 0.225s);
+  display: inline-block;
+}
+@keyframes rise {
+  50% {
+    font-variation-settings: 'wght' var(--upper);
+    color: hsla(0, 0%, 35%, var(--alpha-u));
+    transform: translate(0, -15%);
+  }
+}
+
+.header{
+    height: 500px;
+    background: url("images/blackHeadphone.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: #F8F0E3;
+}
+
+.hero_text{
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    font-size: 40px;
+    font-family: 'Comforter', cursive;
+}
+
+.navbar a.icon {
+    display: block;
+  }
+
+.logo{
+    padding: 10px;
+}
+
+#links{
+    background-color: #333;
+    width: 100%;
+}
+
+.icon{
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 20px;
+}
+
+.link {
+    color: white;
+    padding: 10px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+
+.link:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+#links{
+    display: none;
+}
+
+.Subhero_text{
+    position: absolute;
+    top: 70%;
+    margin: auto;
+    left: 15%;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 10px 20px;
+    opacity: 0.7;
+}
+
+.logo_img{
+    position: relative;
+    top: 5px;
+}
+
+/*.links{
+    display: flex;
+    gap: 9px;
+}*/
+
+.section1{
+    width: 100%;
+    background-image: url("/images/Bpaper.jfif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.break1{
+    position: relative;
+    top: -55px;
+    width: 100%;
+}
+
+.section2{
+    background-color: #ACB992;
+    padding: 7px;
+}
+
+.break2{
+    width: 100%;
+    margin-top: -107px;
+}
+
+.fact{
+    margin-top: -40px;
+    padding: 0px 20px;
+    font-weight: 550;
+}
+
+.heading{
+    margin-top: -60px;
+font-family: 'Zen Kurenaido', sans-serif;
+}
+
+
+.collection{
+    padding: 30px 5px 0px 5px;
+}
+
+.card{
+    height: 400px;
+    width: 100%;
+    background-color: white;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    position: relative;
+    color: black;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.card:hover{
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    }
+
+.image{
+    position: absolute;
+    width:100%;
+    height: 260px;
+}
+.category{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.info{
+    position: relative;
+    text-align: center;
+    font-size: larger;
+    top:70%;
+    line-height: 30px;
+}
+
+.footer{
+    
+    width: 100%;
+    padding: 20px;
+    background-color: #464E2E;
+    color: #AAA492;
+    text-align: center;
+    line-height: 35px;
+}
+.handle{
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+    border-radius: 50%;
+  }
+
+@media screen and (min-width:500px){
+    .card{
+        width: 60%;
+        margin: auto;
+        margin-bottom: 20px;;
+    }
+    .hero_text{
+        top: 30%;
+        left: 50%;
+        font-size: 60px;
+    }
+    .Subhero_text{
+        top: 65%;
+        left: 40%;
+    }
+}
+
+@media screen and (min-width:700px){
+    .collection{
+        display: flex;
+        justify-content: space-between;
+    }
+    .card{
+        width: 23%;
+    }
+
+    .main{
+        padding: 20px;
+    }
+
+    .hero_text{
+        left: 50%;
+        font-size: 60px;
+    }
+
+    .section1{
+        height: 500px;
+    }
+    
+    .break1{
+        width: auto;
+        left: 10px;
+    }
+    
+    .section2{
+        background-color: #8d9e6a;
+        padding: 7px;
+    }
+    
+    .break2{
+    /*position: relative;
+    width: auto;
+    left: 34%;
+    top: -40px;*/
+    margin: auto;
+    top: 30px;
+    }
+
+    .fact{
+        padding: 40px 90px;
+        font-weight: 400;
+        font-size:x-large;
+        line-height: 40px;
+    }
+
+    .Subhero_text{
+        top: 70%;
+        left: 50%;
+    }
+
+    #links{
+        display: flex;
+        width: 40%;
+        background-color: transparent;
+        position: relative;
+    }
+
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .logo{
+        font-size: larger;
+    }
+    .icon{
+        visibility: hidden;
+    }
+    .header{
+        padding: 20px;
+    }
+    .heading{
+        font-size: 30px;
+    }
+    .mood_head {
+        font-size: 4rem;
+        margin-bottom: 30px;
+      }
+}
