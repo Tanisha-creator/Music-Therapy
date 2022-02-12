@@ -251,12 +251,10 @@ font-family: 'Zen Kurenaido', sans-serif;
     }
     
     .break2{
-    /*position: relative;
+    position: relative;
     width: auto;
     left: 34%;
-    top: -40px;*/
-    margin: auto;
-    top: 30px;
+    top: -40px;
     }
 
     .fact{
