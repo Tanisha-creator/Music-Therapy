@@ -233,11 +233,12 @@ font-family: 'Zen Kurenaido', sans-serif;
 
     .hero_text{
         left: 50%;
-        font-size: 60px;
+        top: 40%;
+        font-size: 66px;
     }
 
     .section1{
-        height: 500px;
+        height: 400px;
     }
     
     .break1{
@@ -265,8 +266,8 @@ font-family: 'Zen Kurenaido', sans-serif;
     }
 
     .Subhero_text{
-        top: 70%;
-        left: 50%;
+        top: 60%;
+        left: 55%;
     }
 
     #links{
